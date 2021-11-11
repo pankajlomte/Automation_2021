@@ -35,6 +35,8 @@ public class LoginPage extends BaseClass {
 		 System.out.println("url is ------------"+prop.getProperty("url"));
 		 
 		 BaseClass.driver.get(prop.getProperty("url"));
+		 
+		 
 	 }
 	 
 	 public static void appLogin() {
@@ -44,10 +46,14 @@ public class LoginPage extends BaseClass {
 			LoginPage lp =  new LoginPage();
 			readExcel.getTestData();
 			
+			
+			
 			lp.user.sendKeys(readExcel.userName);
 			lp.pass.sendKeys(readExcel.passWord);
 			 
 			lp.loginButton.click();
+			
+			explicitWait(lp.loginButton);
 			
 			Screenshot.getScreenshot("loginpageimage"); 
 			
@@ -55,11 +61,7 @@ public class LoginPage extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 
-		 
-		 
-		 
-		 
+ 
 	 }
 	
 

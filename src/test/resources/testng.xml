@@ -6,7 +6,7 @@
   		<classes>
  	  		<class name="testCases.verifyUser">
   		</class>
-  		</classes>  
+  			</classes>  
   </test> <!-- Test -->
    
 </suite> <!-- Suite -->	

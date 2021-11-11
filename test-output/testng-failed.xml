@@ -8,7 +8,6 @@
         <methods>
           <include name="confirmUsername"/>
           <include name="setUp"/>
-          <include name="finishTest1"/>
         </methods>
       </class> <!-- testCases.verifyUser -->
     </classes>
