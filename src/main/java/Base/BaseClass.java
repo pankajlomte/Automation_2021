@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
@@ -22,13 +23,16 @@ public class BaseClass {
 	public static Properties prop;
 	public static WebDriver driver;
 	public  String browser;
+	public WebDriverWait wait;
 	
 	public static Logger log = LogManager.getLogger(BaseClass.class);
 	
 	public static void LoadProperty() {
 		
-		try {
-
+		try { 
+			
+			System.out.println(log.isInfoEnabled());
+			
 		 prop = new Properties(); //Creates an empty property list with no default values.
 		
 		InputStream fis = new FileInputStream("D:\\Automation\\AnonyMoose\\src\\main\\resources\\Properties\\config.properties");
@@ -86,8 +90,7 @@ public class BaseClass {
 			
 			log.info("Explicitly waiting for 20 seconds max");
 		}
-		
-		
+		  
 
 	
 }

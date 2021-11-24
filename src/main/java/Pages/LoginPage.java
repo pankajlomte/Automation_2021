@@ -28,6 +28,7 @@ public class LoginPage extends BaseClass {
 		 //searchContext: The driver that will be used to look up the elements
 	 }
 	 
+	 
 	 public static void launchUrl() {
 		 
 		 BaseClass.LoadProperty();
@@ -35,6 +36,7 @@ public class LoginPage extends BaseClass {
 		 System.out.println("url is ------------"+prop.getProperty("url"));
 		 
 		 BaseClass.driver.get(prop.getProperty("url"));
+		 
 		 
 		 
 	 }
