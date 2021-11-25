@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-24T20:26:39 IST" name="Suite" finished-at="2021-11-24T20:27:01 IST" duration-ms="22451">
+  <suite started-at="2021-11-25T19:21:28 IST" name="Suite" finished-at="2021-11-25T19:21:48 IST" duration-ms="20439">
     <groups>
     </groups>
-    <test started-at="2021-11-24T20:26:39 IST" name="chromeBrowserTesting" finished-at="2021-11-24T20:27:01 IST" duration-ms="22451">
+    <test started-at="2021-11-25T19:21:28 IST" name="chromeBrowserTesting" finished-at="2021-11-25T19:21:48 IST" duration-ms="20439">
       <class name="testCases.verifyUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.verifyUser@74cadd41]" started-at="2021-11-24T20:26:39 IST" name="setUp" finished-at="2021-11-24T20:27:00 IST" duration-ms="21456" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.verifyUser@55e8ec2f]" started-at="2021-11-25T19:21:28 IST" name="setUp" finished-at="2021-11-25T19:21:47 IST" duration-ms="19456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkReport()[pri:0, instance:testCases.verifyUser@74cadd41]" started-at="2021-11-24T20:27:01 IST" name="checkReport" finished-at="2021-11-24T20:27:01 IST" duration-ms="12" status="PASS">
+        <test-method signature="checkReport()[pri:0, instance:testCases.verifyUser@55e8ec2f]" started-at="2021-11-25T19:21:47 IST" name="checkReport" finished-at="2021-11-25T19:21:48 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkReport -->
-        <test-method signature="confirmUsername()[pri:0, instance:testCases.verifyUser@74cadd41]" started-at="2021-11-24T20:27:01 IST" name="confirmUsername" finished-at="2021-11-24T20:27:01 IST" duration-ms="2" status="PASS">
+        <test-method signature="confirmUsername()[pri:0, instance:testCases.verifyUser@55e8ec2f]" started-at="2021-11-25T19:21:48 IST" name="confirmUsername" finished-at="2021-11-25T19:21:48 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmUsername -->
-        <test-method is-config="true" signature="finishTest1()[pri:0, instance:testCases.verifyUser@74cadd41]" started-at="2021-11-24T20:27:01 IST" name="finishTest1" finished-at="2021-11-24T20:27:01 IST" duration-ms="952" status="PASS">
+        <test-method is-config="true" signature="finishTest1()[pri:0, instance:testCases.verifyUser@55e8ec2f]" started-at="2021-11-25T19:21:48 IST" name="finishTest1" finished-at="2021-11-25T19:21:48 IST" duration-ms="920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishTest1 -->

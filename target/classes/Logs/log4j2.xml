@@ -1,29 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE xml>
-<Configuration status="warn">
-    <Properties>
-        <Property name="basePath">D:\\Automation\\AnonyMoose\\src\\main\\java\\Logs</Property>
-    </Properties>
- 
-    <Appenders>
-        <RollingFile name="fileLogger" fileName="${basePath}/app-info.log" filePattern="${basePath}/app-info-%d{yyyy-MM-dd}.log">
-            <PatternLayout>
-                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
-            </PatternLayout>
-            <Policies>
-                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
-            </Policies>
-        </RollingFile>
- 
-        <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout   pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
-        </Console>
-    </Appenders>
-    <Loggers>
-        <Logger name="Base" level="info" additivity="true">
-            <appender-ref ref="fileLogger" level="info" />
-        </Logger>
-        <Root level="info" additivity="false">
-            <appender-ref ref="console" />
-        </Root>
-    </Loggers>
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+  		<RollingFile name="RollingFile" fileName="app.log"
+			filePattern="${baseDir}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{dd:MM:yyyy - HH:mm:ss.SSS} %-3p %c{2} [%t] - %m%n
+				</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+  	<Logger name="Logs" level="info" additivity="false">
+  	<AppenderRef ref = "Console"/>
+  	</Logger>  
+    <Root level="trace">
+      <AppenderRef ref="RollingFile"/>
+    </Root>
+  </Loggers>
 </Configuration>
