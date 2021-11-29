@@ -6,6 +6,7 @@
     <classes>
       <class name="testCases.verifyUser">
         <methods>
+          <include name="confirmUsername"/>
           <include name="setUp"/>
           <include name="finishTest1"/>
           <include name="checkReport"/>
