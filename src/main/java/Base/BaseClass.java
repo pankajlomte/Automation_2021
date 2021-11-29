@@ -11,7 +11,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -36,7 +35,7 @@ public class BaseClass {
 			
 		 prop = new Properties(); //Creates an empty property list with no default values.
 		
-		InputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Properties\\config.properties");
+		InputStream fis = new FileInputStream("D:\\Automation\\AnonyMoose\\src\\main\\resources\\Properties\\config.properties");
 
 		prop.load(fis); // Currently it only contains URL parameter.
 		
@@ -54,31 +53,24 @@ public class BaseClass {
 			
 		      if(browser.equalsIgnoreCase("chrome")) {
 				
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\Drivers\\chromedriver.exe");
-		    	  			    	
-			ChromeOptions co = new ChromeOptions();
-			
-			co.setAcceptInsecureCerts(true);
-			
-			driver = new ChromeDriver(co);
+				System.setProperty("webdriver.chrome.driver", "D:\\Automation\\AnonyMoose\\src\\main\\resources\\Drivers\\chromedriver.exe");
 				
-			log.info("Initialiazing the Chrome Browser");
+				driver = new ChromeDriver();
+				
+				log.info("Initialiazing the Chrome Browser");
 
 				
 		}else if (browser.equalsIgnoreCase("firefox")) {
 			
-				System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.firefox.driver", "D:\\Automation\\AnonyMoose\\src\\main\\resources\\Drivers\\geckodriver.exe");
 			
 				driver = new FirefoxDriver();
 				
 				log.info("Initializing the Firefox browser");
 		}
 		
-		driver.manage().window().maximize();
-		
+		driver.manage().window().maximize();	
 		driver.manage().deleteAllCookies();
-		
-		
 		
 	}
 		public static void closeBrowser() {
@@ -98,5 +90,7 @@ public class BaseClass {
 			
 			log.info("Explicitly waiting for 20 seconds max");
 		}
-		  	
+		  
+
+	
 }
