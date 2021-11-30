@@ -31,7 +31,7 @@ public class readExcel extends BaseClass{
 	
 	public static void getTestData() throws FileNotFoundException{
 		
-		String filePath = "D:\\Automation\\AnonyMoose\\src\\main\\resources\\TestData\\Automation_Sample.xlsx";
+		String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\TestData\\Automation_Sample.xlsx";
 		
 		File file = new File(filePath);
 		

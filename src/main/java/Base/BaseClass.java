@@ -35,7 +35,7 @@ public class BaseClass {
 			
 		 prop = new Properties(); //Creates an empty property list with no default values.
 		
-		InputStream fis = new FileInputStream("D:\\Automation\\AnonyMoose\\src\\main\\resources\\Properties\\config.properties");
+		InputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Properties\\config.properties");
 
 		prop.load(fis); // Currently it only contains URL parameter.
 		
@@ -53,7 +53,7 @@ public class BaseClass {
 			
 		      if(browser.equalsIgnoreCase("chrome")) {
 				
-				System.setProperty("webdriver.chrome.driver", "D:\\Automation\\AnonyMoose\\src\\main\\resources\\Drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\Drivers\\chromedriver.exe");
 				
 				driver = new ChromeDriver();
 				
@@ -62,7 +62,7 @@ public class BaseClass {
 				
 		}else if (browser.equalsIgnoreCase("firefox")) {
 			
-				System.setProperty("webdriver.firefox.driver", "D:\\Automation\\AnonyMoose\\src\\main\\resources\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\Drivers\\geckodriver.exe");
 			
 				driver = new FirefoxDriver();
 				
@@ -89,6 +89,7 @@ public class BaseClass {
 			System.out.println("waiting 20 seconds for -----"+element);
 			
 			log.info("Explicitly waiting for 20 seconds max");
+			
 		}
 		  
 

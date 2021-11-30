@@ -21,7 +21,7 @@ public class Screenshot extends BaseClass {
 		
 		File file = srcshort.getScreenshotAs(OutputType.FILE);
 		
-		String Screenshotlocation = prop.getProperty("screenShotfilePath");
+		String Screenshotlocation = prop.getProperty(System.getProperty("user.dir")+"screenShotfilePath");
 		
 		DateFormat df = new SimpleDateFormat("dd-mm-yyyy h-m-s");
 		

@@ -1,6 +1,6 @@
 package Logs;
 
-import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 
 public class logsClass {
@@ -9,7 +9,7 @@ public class logsClass {
 	
 	public static void logging() {
 		
-		org.apache.logging.log4j.Logger log = LogManager.getLogger(logsClass.class.getName());
+		//org.apache.logging.log4j.Logger log = LogManager.getLogger(logsClass.class.getName());
 		
 	}
 

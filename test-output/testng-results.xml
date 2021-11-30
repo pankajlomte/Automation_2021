@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-29T14:41:05 IST" name="Suite" finished-at="2021-11-29T14:41:14 IST" duration-ms="9155">
+  <suite started-at="2021-11-29T22:48:02 IST" name="Suite" finished-at="2021-11-29T22:48:14 IST" duration-ms="11569">
     <groups>
     </groups>
-    <test started-at="2021-11-29T14:41:05 IST" name="chromeBrowserTesting" finished-at="2021-11-29T14:41:14 IST" duration-ms="9155">
+    <test started-at="2021-11-29T22:48:02 IST" name="chromeBrowserTesting" finished-at="2021-11-29T22:48:14 IST" duration-ms="11569">
       <class name="testCases.verifyUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.verifyUser@30b19518]" started-at="2021-11-29T14:41:05 IST" name="setUp" finished-at="2021-11-29T14:41:14 IST" duration-ms="9094" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.verifyUser@13d73fa]" started-at="2021-11-29T22:48:02 IST" name="setUp" finished-at="2021-11-29T22:48:14 IST" duration-ms="11494" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#basic_email"}
@@ -16,9 +16,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SCS-R72', ip: '10.0.41.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [942b355dc1c5ec51f36476522caae550, findElement {using=id, value=basic_email}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62504/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b355dc1c5ec51f36476522caae550]]>
+Command: [1704066a96aa831798c19b0bf683e6b2, findElement {using=id, value=basic_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59956/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1704066a96aa831798c19b0bf683e6b2]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#basic_email"}
@@ -27,9 +27,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SCS-R72', ip: '10.0.41.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [942b355dc1c5ec51f36476522caae550, findElement {using=id, value=basic_email}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62504/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b355dc1c5ec51f36476522caae550
+Command: [1704066a96aa831798c19b0bf683e6b2, findElement {using=id, value=basic_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59956/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1704066a96aa831798c19b0bf683e6b2
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,7 +49,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at Pages.LoginPage.appLogin(LoginPage.java:54)
+at Pages.LoginPage.appLogin(LoginPage.java:53)
 at testCases.verifyUser.setUp(verifyUser.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -81,7 +81,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkReport()[pri:0, instance:testCases.verifyUser@30b19518]" started-at="2021-11-29T14:41:14 IST" name="checkReport" finished-at="2021-11-29T14:41:14 IST" duration-ms="0" status="SKIP">
+        <test-method signature="checkReport()[pri:0, instance:testCases.verifyUser@13d73fa]" started-at="2021-11-29T22:48:14 IST" name="checkReport" finished-at="2021-11-29T22:48:14 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#basic_email"}
@@ -90,9 +90,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SCS-R72', ip: '10.0.41.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [942b355dc1c5ec51f36476522caae550, findElement {using=id, value=basic_email}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62504/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b355dc1c5ec51f36476522caae550]]>
+Command: [1704066a96aa831798c19b0bf683e6b2, findElement {using=id, value=basic_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59956/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1704066a96aa831798c19b0bf683e6b2]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#basic_email"}
@@ -101,9 +101,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SCS-R72', ip: '10.0.41.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [942b355dc1c5ec51f36476522caae550, findElement {using=id, value=basic_email}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62504/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b355dc1c5ec51f36476522caae550
+Command: [1704066a96aa831798c19b0bf683e6b2, findElement {using=id, value=basic_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59956/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1704066a96aa831798c19b0bf683e6b2
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,7 +123,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at Pages.LoginPage.appLogin(LoginPage.java:54)
+at Pages.LoginPage.appLogin(LoginPage.java:53)
 at testCases.verifyUser.setUp(verifyUser.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -155,7 +155,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkReport -->
-        <test-method signature="confirmUsername()[pri:0, instance:testCases.verifyUser@30b19518]" started-at="2021-11-29T14:41:14 IST" name="confirmUsername" finished-at="2021-11-29T14:41:14 IST" duration-ms="0" status="SKIP">
+        <test-method signature="confirmUsername()[pri:0, instance:testCases.verifyUser@13d73fa]" started-at="2021-11-29T22:48:14 IST" name="confirmUsername" finished-at="2021-11-29T22:48:14 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#basic_email"}
@@ -164,9 +164,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SCS-R72', ip: '10.0.41.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [942b355dc1c5ec51f36476522caae550, findElement {using=id, value=basic_email}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62504/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b355dc1c5ec51f36476522caae550]]>
+Command: [1704066a96aa831798c19b0bf683e6b2, findElement {using=id, value=basic_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59956/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1704066a96aa831798c19b0bf683e6b2]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#basic_email"}
@@ -175,9 +175,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SCS-R72', ip: '10.0.41.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [942b355dc1c5ec51f36476522caae550, findElement {using=id, value=basic_email}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62504/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 942b355dc1c5ec51f36476522caae550
+Command: [1704066a96aa831798c19b0bf683e6b2, findElement {using=id, value=basic_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\pankajl\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59956/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1704066a96aa831798c19b0bf683e6b2
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -197,7 +197,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at Pages.LoginPage.appLogin(LoginPage.java:54)
+at Pages.LoginPage.appLogin(LoginPage.java:53)
 at testCases.verifyUser.setUp(verifyUser.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -229,7 +229,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmUsername -->
-        <test-method is-config="true" signature="finishTest1()[pri:0, instance:testCases.verifyUser@30b19518]" started-at="2021-11-29T14:41:14 IST" name="finishTest1" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638177074665" status="SKIP">
+        <test-method is-config="true" signature="finishTest1()[pri:0, instance:testCases.verifyUser@13d73fa]" started-at="2021-11-29T22:48:14 IST" name="finishTest1" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638206294166" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishTest1 -->

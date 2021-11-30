@@ -24,7 +24,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre">
 		<attributes>
 			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -36,26 +36,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-ooxml-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-ooxml-full-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-ooxml-lite-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-examples-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-excelant-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-integration-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/poi-scratchpad-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/ooxml-lib/commons-compress-1.20.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/ooxml-lib/curvesapi-1.06.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/ooxml-lib/xmlbeans-4.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/batik-all-1.13.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/bcpkix-jdk15on-1.68.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/bcprov-jdk15on-1.68.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/fontbox-2.0.22.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/graphics2d-0.30.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/pdfbox-2.0.22.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/xml-apis-ext-1.3.04.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/xmlgraphics-commons-2.4.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Test/poi-5.0.0/auxiliary/xmlsec-2.2.1.jar"/>
-	<classpathentry kind="lib" path="src/main/resources/Logs/log4j2.xml"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
