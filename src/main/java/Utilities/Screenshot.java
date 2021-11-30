@@ -23,6 +23,8 @@ public class Screenshot extends BaseClass {
 		
 		String Screenshotlocation = prop.getProperty(System.getProperty("user.dir")+"screenShotfilePath");
 		
+		System.out.println("system dir is -------- "+System.getProperty("user.dir"));
+		
 		DateFormat df = new SimpleDateFormat("dd-mm-yyyy h-m-s");
 		
 		Date date = new Date();

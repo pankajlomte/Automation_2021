@@ -15,10 +15,10 @@ import Utilities.readExcel;
 public class LoginPage extends BaseClass {
 	
 	 @FindBy(id="basic_email")
-	 WebElement user;
+	 public WebElement user;
 	 
 	 @FindBy(id="basic_password")
-	 WebElement pass;
+	 public WebElement pass;
 	 
 	 @FindBy(xpath="//span[contains(text(),'Sign In')]")
 	 WebElement loginButton;
@@ -46,6 +46,7 @@ public class LoginPage extends BaseClass {
 		 try {
 			 
 			LoginPage lp =  new LoginPage();
+			
 			readExcel.getTestData();
 			
 			

@@ -5,11 +5,11 @@ import org.apache.logging.log4j.core.Logger;
 
 public class logsClass {
 	
-	public static Logger log;
+	public static Logger logs;
 	
 	public static void logging() {
 		
-		//org.apache.logging.log4j.Logger log = LogManager.getLogger(logsClass.class.getName());
+		//org.apache.logging.log4j.Logger logs = LogManager.getLogger(logsClass.class.getName());
 		
 	}
 

@@ -11,18 +11,24 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import Base.BaseClass;
-import Logs.logsClass;
+//import Logs.logsClass;
 import Pages.LoginPage;
+import Pages.ManageEmployees;
 import Reports.extentReportsClass;
 
+
 public class verifyUser extends BaseClass {
+	
+	LoginPage l = new LoginPage();
+	
+	ManageEmployees m = new ManageEmployees();
 	
 	@BeforeTest
 	public void setUp() throws FileNotFoundException, InterruptedException {
 		
 		System.out.println("in beforetest");
 		
-		LoginPage l = new LoginPage();
+		
 		l.browserInitialization("chrome");
 		Thread.sleep(3000);
 		
@@ -45,16 +51,21 @@ public class verifyUser extends BaseClass {
 		
 		extentReportsClass.test = extentReportsClass.extent.createTest("verify user test case 1","1st desc");
 		extentReportsClass.test.log(Status.INFO, "THIS IS THE LOG FROM EXTENT REPORT ");
+		
+		//explicitWait(ManageEmployees.userProfile);
+		
 		extentReportsClass.test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\src\\main\\resources\\Screenshots\\extentTEST.png");
 		
-		logsClass.logging();
+		ManageEmployees.checkUserprofile(); 
 		
-		log.info("logs info---------------------------------------------");
-		log.debug("DEBUD --- CONFIRMUSER");
-		log.fatal("FATAL --- CONFIRMUSER");
-		log.error("Error ------ confirmuser");
-		log.warn("warn ----- confirmuser");
+	/*	logsClass.logging();
 		
+		logsClass.logs.info("logs info---------------------------------------------");
+		logsClass.logs.debug("DEBUD --- CONFIRMUSER");
+		logsClass.logs.fatal("FATAL --- CONFIRMUSER");
+		logsClass.logs.error("Error ------ confirmuser");
+		logsClass.logs.warn("warn ----- confirmuser");
+	*/
 		
 	}
 	

@@ -26,6 +26,9 @@ public class readExcel extends BaseClass{
 	
 	public static String userName;
 	public static String passWord;
+	public static String firstName;
+	public static String lastName;
+	public static String userRole;
 	
 	public static String [] [] data ;
 	
@@ -76,13 +79,29 @@ public class readExcel extends BaseClass{
 					if (cell.getColumnIndex()==0) {
 						userName  = cell.getStringCellValue();
 						
-						System.out.println("username is --------> "+userName);
+						System.out.println("Username is --------> "+userName);
 						
 					}
 					else if(cell.getColumnIndex()==1) {
 						passWord = cell.getStringCellValue();
 						
-						System.out.println("username is --------> "+passWord);
+						System.out.println("Password is --------> "+passWord);
+					}
+					
+					else if (cell.getColumnIndex()==2) {
+						firstName = cell.getStringCellValue();
+						
+						System.out.println("First name is --------> "+firstName);
+					}
+					else if (cell.getColumnIndex()==3) {
+						lastName=cell.getStringCellValue();
+						
+						System.out.println("Last name is --------> "+lastName);
+					}
+					else if (cell.getColumnIndex()==4) {
+						userRole = cell.getStringCellValue();
+						
+						System.out.println("User Role is --------> "+userRole);
 					}
 		
 				}
