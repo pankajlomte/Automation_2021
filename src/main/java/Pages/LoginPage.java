@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import Base.BaseClass;
 import Utilities.Screenshot;
 import Utilities.readExcel;
+import Utilities.readExcelAdvanced;
 
 public class LoginPage extends BaseClass {
 	
@@ -42,26 +43,23 @@ public class LoginPage extends BaseClass {
 	 
 	 public static void appLogin() {
 		 
-		 try {
-			 
-			LoginPage lp =  new LoginPage();
-			
-			readExcel.getTestData();
-						
-			
-			lp.user.sendKeys(readExcel.userName);
-			lp.pass.sendKeys(readExcel.passWord);
-			 
-			lp.loginButton.click();
-			
-			explicitWait(lp.loginButton,5);
-			
-			Screenshot.getScreenshot("loginpageimage"); 
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		 LoginPage lp =  new LoginPage();
+		
+		readExcelAdvanced.setExcelfile(userDir+prop.getProperty("testDatafilePath"),"Sheet1");
+		
+		//readExcel.getTestData();
+		
+		userName=readExcelAdvanced.getData("Username",1);
+		passWord=readExcelAdvanced.getData("Password",1);
+
+		lp.user.sendKeys(readExcel.userName);
+		lp.pass.sendKeys(readExcel.passWord);
+		 
+		lp.loginButton.click();
+		
+		explicitWait(lp.loginButton,5);
+		
+		Screenshot.getScreenshot("loginpageimage");
  
 	 }
 	

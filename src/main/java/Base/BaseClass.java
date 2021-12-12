@@ -23,8 +23,11 @@ public class BaseClass {
 	public static WebDriver driver;
 	public String browser;
 	public WebDriverWait wait;
+	public static String userDir=System.getProperty("user.dir");
 
 	public static Logger log = LogManager.getLogger(BaseClass.class);
+	
+	public static String userName,passWord,firstName,lastName,Role;
 
 	public static void LoadProperty() {
 		

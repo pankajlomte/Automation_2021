@@ -8,6 +8,7 @@ import java.util.Iterator;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -18,12 +19,15 @@ import Base.BaseClass;
 
 public class readExcel extends BaseClass{
 	
+	public static FileInputStream fis;
 	public static Workbook workbook;
 	public static Sheet sheet; 
 	public static Row row;
 	public static Cell cell;
+	public static CellStyle cellstyle;
 	
 	
+	public static String filePath;
 	public static String userName;
 	public static String passWord;
 	public static String firstName;
@@ -34,11 +38,11 @@ public class readExcel extends BaseClass{
 	
 	public static void getTestData() throws FileNotFoundException{
 		
-		String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\TestData\\Automation_Sample.xlsx";
+		filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\TestData\\Automation_Sample.xlsx";
 		
 		File file = new File(filePath);
 		
-		FileInputStream fis = new FileInputStream(file);
+		fis = new FileInputStream(file);
 		
 		System.out.println("fis------ "+fis);
 		

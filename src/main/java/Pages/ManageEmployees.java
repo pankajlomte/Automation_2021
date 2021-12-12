@@ -8,6 +8,7 @@ import org.testng.Assert;
 
 import Base.BaseClass;
 import Utilities.readExcel;
+import Utilities.readExcelAdvanced;
 
 public class ManageEmployees extends BaseClass {
 	
@@ -20,10 +21,11 @@ public class ManageEmployees extends BaseClass {
 		
 		ManageEmployees me= new ManageEmployees();
 		
-		try {
-			 readExcel.getTestData();
+			 //readExcel.getTestData();
+			firstName = readExcelAdvanced.getData("Firstname", 1);
+			lastName = readExcelAdvanced.getData("lastName", 1);
 			
-			 String expectedProfileName= readExcel.firstName+" "+readExcel.lastName;
+			 String expectedProfileName= firstName+" "+lastName;
 			 
 			 explicitWait(userProfile,20);
 			 
@@ -33,11 +35,7 @@ public class ManageEmployees extends BaseClass {
 			 
 			 Assert.assertTrue(actualProfileName.contains(expectedProfileName), "User is correct"); 
 			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		 
 	}
 	
 		
