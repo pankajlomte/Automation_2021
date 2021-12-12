@@ -2,27 +2,33 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-30T23:22:21 IST" name="Suite" finished-at="2021-11-30T23:22:43 IST" duration-ms="21593">
+  <suite started-at="2021-12-07T22:49:54 IST" name="Suite" finished-at="2021-12-07T22:51:03 IST" duration-ms="69741">
     <groups>
     </groups>
-    <test started-at="2021-11-30T23:22:21 IST" name="chromeBrowserTesting" finished-at="2021-11-30T23:22:43 IST" duration-ms="21593">
+    <test started-at="2021-12-07T22:49:54 IST" name="chromeBrowserTesting" finished-at="2021-12-07T22:51:03 IST" duration-ms="69741">
       <class name="testCases.verifyUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-11-30T23:22:21 IST" name="setUp" finished-at="2021-11-30T23:22:41 IST" duration-ms="20113" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-12-07T22:49:54 IST" name="setUp" finished-at="2021-12-07T22:51:02 IST" duration-ms="68310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkReport()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-11-30T23:22:41 IST" name="checkReport" finished-at="2021-11-30T23:22:41 IST" duration-ms="29" status="PASS">
+        <test-method signature="checkReport()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-12-07T22:51:02 IST" name="checkReport" finished-at="2021-12-07T22:51:02 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkReport -->
-        <test-method signature="confirmUsername()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-11-30T23:22:41 IST" name="confirmUsername" finished-at="2021-11-30T23:22:41 IST" duration-ms="96" status="FAIL">
+        <test-method signature="confirmUsername()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-12-07T22:51:02 IST" name="confirmUsername" finished-at="2021-12-07T22:51:02 IST" duration-ms="73" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.getText()" because "Pages.ManageEmployees.userProfile" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "Pages.ManageEmployees.userProfile" is null
-at Pages.ManageEmployees.checkUserprofile(ManageEmployees.java:26)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at Base.BaseClass.explicitWait(BaseClass.java:89)
+at Pages.ManageEmployees.checkUserprofile(ManageEmployees.java:28)
 at testCases.verifyUser.confirmUsername(verifyUser.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -58,7 +64,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmUsername -->
-        <test-method is-config="true" signature="finishTest1()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-11-30T23:22:41 IST" name="finishTest1" finished-at="2021-11-30T23:22:43 IST" duration-ms="1292" status="PASS">
+        <test-method is-config="true" signature="finishTest1()[pri:0, instance:testCases.verifyUser@25ddbbbb]" started-at="2021-12-07T22:51:02 IST" name="finishTest1" finished-at="2021-12-07T22:51:03 IST" duration-ms="1308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishTest1 -->

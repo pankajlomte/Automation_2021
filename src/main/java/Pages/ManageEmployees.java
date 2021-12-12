@@ -14,16 +14,20 @@ public class ManageEmployees extends BaseClass {
 	
 	
 	@FindBy(xpath="//span[@class='uname-top']")
-	public static WebElement userProfile;
+	public WebElement userProfile;
 	
-	public static void checkUserprofile() {
+	public void checkUserprofile() {
+		
+		ManageEmployees me= new ManageEmployees();
 		
 		try {
-			readExcel.getTestData();
+			 readExcel.getTestData();
 			
 			 String expectedProfileName= readExcel.firstName+" "+readExcel.lastName;
 			 
-			 String actualProfileName=userProfile.getText();
+			 explicitWait(userProfile,20);
+			 
+			 String actualProfileName=me.userProfile.getText();
 			 
 			 System.out.println("Now check the user on right corner-------");
 			 

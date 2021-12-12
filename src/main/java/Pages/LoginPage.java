@@ -18,10 +18,10 @@ public class LoginPage extends BaseClass {
 	 public WebElement user;
 	 
 	 @FindBy(id="basic_password")
-	 public WebElement pass;
+	 public  WebElement pass;
 	 
 	 @FindBy(xpath="//span[contains(text(),'Sign In')]")
-	 WebElement loginButton;
+	 public  WebElement loginButton;
 	 
 	 public LoginPage() {
 		 PageFactory.initElements(driver, this);// As initElements(SearchContext, Class) but will only replace the fields of an already instantiated Page Object.
@@ -38,7 +38,6 @@ public class LoginPage extends BaseClass {
 		 BaseClass.driver.get(prop.getProperty("url"));
 		 
 		 
-		 
 	 }
 	 
 	 public static void appLogin() {
@@ -48,15 +47,14 @@ public class LoginPage extends BaseClass {
 			LoginPage lp =  new LoginPage();
 			
 			readExcel.getTestData();
-			
-			
+						
 			
 			lp.user.sendKeys(readExcel.userName);
 			lp.pass.sendKeys(readExcel.passWord);
 			 
 			lp.loginButton.click();
 			
-			explicitWait(lp.loginButton);
+			explicitWait(lp.loginButton,5);
 			
 			Screenshot.getScreenshot("loginpageimage"); 
 			

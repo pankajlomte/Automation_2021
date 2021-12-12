@@ -56,7 +56,7 @@ public class verifyUser extends BaseClass {
 		
 		extentReportsClass.test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\src\\main\\resources\\Screenshots\\extentTEST.png");
 		
-		ManageEmployees.checkUserprofile(); 
+		m.checkUserprofile(); 
 		
 	/*	logsClass.logging();
 		
@@ -76,7 +76,7 @@ public class verifyUser extends BaseClass {
 		extentReportsClass.test = extentReportsClass.extent.createTest("second test is ------- checkReport");
 		
 		try {
-				System.out.println("value is -----"+(1/0));
+				System.out.println("value is -----"+(1/10));
 		}
 		
 		catch (Exception e) {

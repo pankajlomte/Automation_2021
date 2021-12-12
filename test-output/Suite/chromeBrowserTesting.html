@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 30 23:22:21 IST 2021</td>
+<td>Started on:</td><td>Tue Dec 07 22:49:54 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21593 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69741 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,25 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.verifyUser.confirmUsername()'><b>confirmUsername</b><br>Test class: testCases.verifyUser</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getText()&quot; because &quot;Pages.ManageEmployees.userProfile&quot; is null
-	at Pages.ManageEmployees.checkUserprofile(ManageEmployees.java:26)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at Base.BaseClass.explicitWait(BaseClass.java:89)
+	at Pages.ManageEmployees.checkUserprofile(ManageEmployees.java:28)
 	at testCases.verifyUser.confirmUsername(verifyUser.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1495382332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1495382332'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getText()&quot; because &quot;Pages.ManageEmployees.userProfile&quot; is null
-	at Pages.ManageEmployees.checkUserprofile(ManageEmployees.java:26)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1160326849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1160326849'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at Base.BaseClass.explicitWait(BaseClass.java:89)
+	at Pages.ManageEmployees.checkUserprofile(ManageEmployees.java:28)
 	at testCases.verifyUser.confirmUsername(verifyUser.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
