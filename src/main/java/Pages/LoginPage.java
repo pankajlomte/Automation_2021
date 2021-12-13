@@ -1,6 +1,6 @@
 package Pages;
 
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 
 //import java.io.FileNotFoundException;
 
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Base.BaseClass;
 import Utilities.Screenshot;
-import Utilities.readExcel;
+//import Utilities.readExcel;
 import Utilities.readExcelAdvanced;
 
 public class LoginPage extends BaseClass {
@@ -45,19 +45,26 @@ public class LoginPage extends BaseClass {
 		 
 		 LoginPage lp =  new LoginPage();
 		
-		readExcelAdvanced.setExcelfile(userDir+prop.getProperty("testDatafilePath"),"Sheet1");
+		readExcelAdvanced.setExcelfile((userDir+prop.getProperty("testDatafilePath")),"Sheet1");
 		
 		//readExcel.getTestData();
 		
 		userName=readExcelAdvanced.getData("Username",1);
 		passWord=readExcelAdvanced.getData("Password",1);
-
-		lp.user.sendKeys(readExcel.userName);
-		lp.pass.sendKeys(readExcel.passWord);
+		
+		System.out.println(userName);
+		System.out.println(passWord);
+		 
+		explicitWait(lp.loginButton,10);
+		
+		System.out.println("wait completed");
+		
+		lp.user.sendKeys(userName);
+		lp.pass.sendKeys(passWord);
 		 
 		lp.loginButton.click();
 		
-		explicitWait(lp.loginButton,5);
+		explicitWait(lp.loginButton,10);
 		
 		Screenshot.getScreenshot("loginpageimage");
  

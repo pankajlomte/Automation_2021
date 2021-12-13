@@ -91,9 +91,9 @@ public class BaseClass {
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 
-		System.out.println("waiting 20 seconds for -----" + element);
+		System.out.println("waiting "+duration+"seconds for -----" + element);
 
-		log.info("Explicitly waiting for 20 seconds max");
+		//log.info("Explicitly waiting for 20 seconds max");
 
 	}
 

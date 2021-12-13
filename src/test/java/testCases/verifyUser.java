@@ -44,10 +44,10 @@ public class verifyUser extends BaseClass {
 	
 	
 	@Test
-	public void confirmUsername() throws IOException {
+	public void confirmUsername() throws IOException, InterruptedException {
 		
 		
-		System.out.println(log.isTraceEnabled());
+		System.out.println("In Confirmusername test");
 		
 		extentReportsClass.test = extentReportsClass.extent.createTest("verify user test case 1","1st desc");
 		extentReportsClass.test.log(Status.INFO, "THIS IS THE LOG FROM EXTENT REPORT ");
@@ -73,10 +73,11 @@ public class verifyUser extends BaseClass {
 	public void checkReport() {
 		
 		System.out.println("Second Test case - checkReport");
+		
 		extentReportsClass.test = extentReportsClass.extent.createTest("second test is ------- checkReport");
 		
 		try {
-				System.out.println("value is -----"+(1/10));
+				System.out.println("value is -----"+(1/0));
 		}
 		
 		catch (Exception e) {
