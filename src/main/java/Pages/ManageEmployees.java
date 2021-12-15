@@ -7,16 +7,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import Base.BaseClass;
-//import Utilities.readExcel;
-import Utilities.readExcelAdvanced;
+import BaseP.BaseClass;
+import UtilitiesP.readExcelAdvanced;
 
 public class ManageEmployees extends BaseClass {
 	
 	
 	
 	@FindBy(xpath="//span[@class='uname-top']")
-	WebElement userProfile;
+	public WebElement userProfile;
 	
 	public ManageEmployees() {
 		PageFactory.initElements(driver, this);
@@ -35,15 +34,15 @@ public class ManageEmployees extends BaseClass {
 			
 			 String expectedProfileName= firstName+" "+lastName;
 			 
-			  //explicitWait(userProfile,5);
+			  explicitWait(userProfile,5);
 			 
-			 Thread.sleep(5000);
+			 //Thread.sleep(5000);
 			 
-			 String actualProfileName=me.userProfile.getText();
+			 String actualProfileName=me.userProfile.getText().replaceAll("\n","");
 			 
 			 System.out.println("Now check the user on right corner-------");
 			 
-			 Assert.assertTrue(actualProfileName.contains(expectedProfileName), "User is correct"); 
+			 Assert.assertTrue(actualProfileName.contains(expectedProfileName), "User is NOT correct"); 
 			
 	}
 	

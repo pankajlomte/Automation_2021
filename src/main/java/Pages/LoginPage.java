@@ -8,10 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Base.BaseClass;
-import Utilities.Screenshot;
-//import Utilities.readExcel;
-import Utilities.readExcelAdvanced;
+import BaseP.BaseClass;
+import UtilitiesP.Screenshot;
+import UtilitiesP.readExcelAdvanced;
+
+
 
 public class LoginPage extends BaseClass {
 	
@@ -57,6 +58,7 @@ public class LoginPage extends BaseClass {
 		 
 		explicitWait(lp.loginButton,10);
 		
+		 
 		System.out.println("wait completed");
 		
 		lp.user.sendKeys(userName);
@@ -64,6 +66,7 @@ public class LoginPage extends BaseClass {
 		 
 		lp.loginButton.click();
 		
+		 		
 		explicitWait(lp.loginButton,10);
 		
 		Screenshot.getScreenshot("loginpageimage");

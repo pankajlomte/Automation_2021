@@ -1,4 +1,4 @@
-package Utilities;
+package UtilitiesP;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;
 
-import Base.BaseClass;
+import BaseP.BaseClass;
 
 public class Screenshot extends BaseClass {
 	
