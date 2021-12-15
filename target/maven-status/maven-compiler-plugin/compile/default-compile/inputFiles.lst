@@ -1,11 +1,11 @@
 D:\Automation\2021\Automation_2021\src\main\java\Pages\ManageEmployees.java
 D:\Automation\2021\Automation_2021\src\main\java\Pages\LoginPage.java
-D:\Automation\2021\Automation_2021\src\main\java\Utilities\WriteExcel.java
-D:\Automation\2021\Automation_2021\src\main\java\Base\BaseClass.java
-D:\Automation\2021\Automation_2021\src\main\java\Utilities\readExcel.java
-D:\Automation\2021\Automation_2021\src\main\java\Utilities\Screenshot.java
+D:\Automation\2021\Automation_2021\src\main\java\BaseP\BaseClass.java
+D:\Automation\2021\Automation_2021\src\main\java\UtilitiesP\readExcel.java
+D:\Automation\2021\Automation_2021\src\main\java\UtilitiesP\Screenshot.java
+D:\Automation\2021\Automation_2021\src\main\java\UtilitiesP\WriteExcel.java
 D:\Automation\2021\Automation_2021\src\main\java\Listeners\DriverListener.java
+D:\Automation\2021\Automation_2021\src\main\java\UtilitiesP\readExcelAdvanced.java
 D:\Automation\2021\Automation_2021\src\main\java\Pages\Hotlines.java
-D:\Automation\2021\Automation_2021\src\main\java\Reports\extentReportsClass.java
-D:\Automation\2021\Automation_2021\src\main\java\Utilities\readExcelAdvanced.java
 D:\Automation\2021\Automation_2021\src\main\java\Logs\logsClass.java
+D:\Automation\2021\Automation_2021\src\main\java\Reports\ExtentReporterNG.java

@@ -10,25 +10,25 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-import Base.BaseClass;
+import BaseP.BaseClass;
 //import Logs.logsClass;
 import Pages.LoginPage;
 import Pages.ManageEmployees;
-import Reports.extentReportsClass;
+import Reports.ExtentReporterNG;
+ 
 
 
 public class verifyUser extends BaseClass {
 	
-	LoginPage l = new LoginPage();
 	
-	ManageEmployees m = new ManageEmployees();
+	
 	
 	@BeforeTest
 	public void setUp() throws FileNotFoundException, InterruptedException {
 		
 		System.out.println("in beforetest");
-		
-		
+		 
+		LoginPage l = new LoginPage();
 		l.browserInitialization("chrome");
 		Thread.sleep(3000);
 		
@@ -36,26 +36,27 @@ public class verifyUser extends BaseClass {
 		
 		LoginPage.launchUrl();
 		LoginPage.appLogin();
-		
-		extentReportsClass.extentReportMethod();
+		//Thread.sleep(5000);
+		//explicitWait(m.userProfile, 20);
+		ExtentReporterNG.extentReportMethod();
 		
 		
 }
 	
-	
-	@Test
+	@Test(priority=1)
 	public void confirmUsername() throws IOException, InterruptedException {
 		
-		
+
+		ManageEmployees m = new ManageEmployees();
 		System.out.println("In Confirmusername test");
 		
-		extentReportsClass.test = extentReportsClass.extent.createTest("verify user test case 1","1st desc");
-		extentReportsClass.test.log(Status.INFO, "THIS IS THE LOG FROM EXTENT REPORT ");
+		ExtentReporterNG.test = ExtentReporterNG.extent.createTest("verify user test casessssssssss 1","1512");
+		ExtentReporterNG.test.log(Status.INFO, "THIS IS THE LOG FROM EXTENT REPORT ");
 		
-		//explicitWait(ManageEmployees.userProfile);
-		
-		extentReportsClass.test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\src\\main\\resources\\Screenshots\\extentTEST.png");
-		
+		 
+		//extentReportsClass.test.addScreenCaptureFromPath(System.getProperty("user.dir")+"\\src\\main\\resources\\Screenshots\\extentTEST.png");
+		 
+		explicitWait(m.userProfile, 15);
 		m.checkUserprofile(); 
 		
 	/*	logsClass.logging();
@@ -69,21 +70,21 @@ public class verifyUser extends BaseClass {
 		
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void checkReport() {
 		
 		System.out.println("Second Test case - checkReport");
 		
-		extentReportsClass.test = extentReportsClass.extent.createTest("second test is ------- checkReport");
+		ExtentReporterNG.test = ExtentReporterNG.extent.createTest("second test is ------- checkReport");
 		
 		try {
 				System.out.println("value is -----"+(1/0));
 		}
 		
 		catch (Exception e) {
-			extentReportsClass.test.log(Status.INFO, "FAILED DUE TO INFINITY RESULT");
+			ExtentReporterNG.test.log(Status.INFO, "FAILED DUE TO INFINITY RESULT");
 			
-			extentReportsClass.test.log(Status.FAIL, "FAILED DUE TO INFINITY RESULT---STATUS");
+			ExtentReporterNG.test.log(Status.FAIL, "FAILED DUE TO INFINITY RESULT---STATUS");
 		}
 		
 		
@@ -92,7 +93,7 @@ public class verifyUser extends BaseClass {
 	@AfterTest
 	public void finishTest1() {
 		closeBrowser();
-		extentReportsClass.extent.flush();
+		ExtentReporterNG.extent.flush();
 	}
 	
 }

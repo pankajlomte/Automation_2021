@@ -1,4 +1,4 @@
-package Base;
+package BaseP;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -91,7 +91,7 @@ public class BaseClass {
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 
-		System.out.println("waiting "+duration+"seconds for -----" + element);
+		System.out.println("waiting "+duration+"seconds for -----" + element.getText());
 
 		//log.info("Explicitly waiting for 20 seconds max");
 
