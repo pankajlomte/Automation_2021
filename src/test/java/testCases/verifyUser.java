@@ -93,6 +93,11 @@ public class verifyUser extends BaseClass{
 		
 	}
 	
+	@Test(priority=3)
+	public static void checkUserData() {
+		
+	}
+	
 	@AfterTest
 	public void finishTest1() {
 		closeBrowser();
