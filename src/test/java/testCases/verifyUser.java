@@ -3,6 +3,7 @@ package testCases;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+
 //import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -15,12 +16,13 @@ import BaseP.BaseClass;
 import Pages.LoginPage;
 import Pages.ManageEmployees;
 import Reports.ExtentReporterNG;
+import Reports.createPDFReport;
  
 
 
-public class verifyUser extends BaseClass {
+public class verifyUser extends BaseClass{
 	
-	
+	createPDFReport cpdf = new createPDFReport();
 	
 	
 	@BeforeTest
@@ -39,6 +41,7 @@ public class verifyUser extends BaseClass {
 		//Thread.sleep(5000);
 		//explicitWait(m.userProfile, 20);
 		ExtentReporterNG.extentReportMethod();
+		
 		
 		
 }
