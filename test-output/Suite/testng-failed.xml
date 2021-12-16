@@ -2,14 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="Reports.ExtentReporterNG"/>
+  </listeners>
   <test thread-count="5" name="chromeBrowserTesting(failed)">
     <classes>
       <class name="testCases.verifyUser">
         <methods>
           <include name="confirmUsername"/>
           <include name="setUp"/>
-          <include name="finishTest1"/>
-          <include name="checkReport"/>
+          <include name="generateReport"/>
         </methods>
       </class> <!-- testCases.verifyUser -->
     </classes>

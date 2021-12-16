@@ -22,21 +22,35 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
 <dependencies>
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-deploy-plugin</artifactId>
+	    <version>3.0.0-M1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.0.9</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/tech.grasshopper/extent-pdf-report -->
 <dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-deploy-plugin</artifactId>
-    <version>3.0.0-M1</version>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extent-pdf-report</artifactId>
+    <version>1.8.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
+<dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.13.2</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>5.0.9</version>
-</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-testng-adapter -->
+	
 
-
-  
 	<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
