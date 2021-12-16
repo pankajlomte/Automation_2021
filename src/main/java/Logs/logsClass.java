@@ -9,6 +9,8 @@ public class logsClass {
 	
 	public static void logging() {
 		
+		System.out.println("in logging class");
+		
 		//org.apache.logging.log4j.Logger logs = LogManager.getLogger(logsClass.class.getName());
 		
 	}
