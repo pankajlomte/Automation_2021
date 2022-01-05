@@ -10,9 +10,11 @@
     <classes>
       <class name="testCases.verifyUser">
         <methods>
+          <include name="confirmUsername"/>
           <include name="initializationM2"/>
           <include name="finishTest1"/>
           <include name="checkUserData"/>
+          <include name="checkReport"/>
         </methods>
       </class> <!-- testCases.verifyUser -->
     </classes>
