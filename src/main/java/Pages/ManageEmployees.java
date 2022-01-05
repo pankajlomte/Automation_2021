@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import BaseP.BaseClass;
+import UtilitiesP.Screenshot;
 import UtilitiesP.readExcelAdvanced;
 
 public class ManageEmployees extends BaseClass {
@@ -70,6 +71,29 @@ public class ManageEmployees extends BaseClass {
 
 	}
 	
+	public void checkSearchPlaceholder() {
+		
+		explicitWait(searchPlaceholder,2);
+		
+		String ActualSearchplaceholder =  searchPlaceholder.getText();
+		String ExpectedSearchplaceholder = "Search by First Name, Last Name, Mobile Number or Email ID";
+		
+		System.out.println("Search placeholder text is "+ActualSearchplaceholder);
+				
+		Assert.assertEquals(ActualSearchplaceholder,ExpectedSearchplaceholder );
+		
+	}
+	
+	public void checkFilter() {
+		
+		explicitWait(employeeFilter,5);
+		
+		employeeFilter.click();
+		
+		Screenshot.getScreenshot("EmployeeFilter");
+	
+		
+	}
 	
 	
 		

@@ -1,6 +1,7 @@
 package BaseP;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.Duration;
@@ -21,7 +22,7 @@ public class BaseClass {
 
 	public static Properties prop;
 	public static WebDriver driver;
-	public String browser;
+	public static String browser;
 	public WebDriverWait wait;
 	public static String userDir=System.getProperty("user.dir");
 
@@ -42,7 +43,11 @@ public class BaseClass {
 
 			prop.load(fis); // Currently it only contains URL parameter.
 
+			System.out.println("browser property is ---> "+prop.getProperty("browserName"));
+			
 			log.info("Started loading the properties file");
+			
+			
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -52,7 +57,7 @@ public class BaseClass {
 
 	@Parameters("browser") // Instead of properties file, configured browsers in testng.xml
 	public void browserInitialization(String browser1) {
-		this.browser = browser1;
+		//this.browser = browser1;
 
 		if (browser1.equalsIgnoreCase("chrome")) {
 
@@ -96,5 +101,7 @@ public class BaseClass {
 		//log.info("Explicitly waiting for 20 seconds max");
 
 	}
+	
+
 
 }
