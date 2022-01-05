@@ -4,14 +4,17 @@
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="Reports.ExtentReporterNG"/>
+    <listener class-name="Reports.SeleniumPDFReportWithIReporter"/>
   </listeners>
   <test thread-count="5" name="chromeBrowserTesting(failed)">
     <classes>
       <class name="testCases.verifyUser">
         <methods>
           <include name="confirmUsername"/>
-          <include name="setUp"/>
-          <include name="generateReport"/>
+          <include name="initializationM2"/>
+          <include name="finishTest1"/>
+          <include name="checkUserData"/>
+          <include name="checkReport"/>
         </methods>
       </class> <!-- testCases.verifyUser -->
     </classes>
